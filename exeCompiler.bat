@@ -1,16 +1,25 @@
 @echo off
-echo %USERNAME% is running EXECOMPILER
-echo directory %CD%
-echo date %DATE%
+
+echo Welcome to EXECompiler, %USERNAME%.
+echo - %DATE%
+echo - %CD%
 echo.
 
-echo if you do not use default, your target directory should be in the following format:
-echo C:\example1\example2\example3\x
-echo x should be the new folders name
-set /p targetDirectory= enter target directory and file(type "default" for current directory): 
+echo Information regarding your directory folder:
+echo  Your path input, if not default, should be in the format
+echo C:\example1\example2\y\x
+echo y should be the main folder you want it to be in
+echo x should be the new name of the compressed folder (it will be generated)
+echo if you use default as your directory, the folder will be named default
+echo.
+echo type "default" for the directory that this compiler is stored in
+echo.
+echo.
+set /p targetDirectory= enter target directory: 
 
-echo directory selected.
-echo directory that will be copied to: %targetDirectory%
+echo directory selected
+echo directory confirmed
+echo your compiled exe will be copied to %targetDirectory%
 set destination=%targetDirectory%
 )
 
@@ -20,9 +29,9 @@ set destination=%destination: =*%
 
 echo.
 powershell -Command "Compress-Archive -Path %normalpath% -DestinationPath %destination%"
-echo cloning sucessful, opening directory
+echo your file has successfully been copied
+echo opening the folder which contains x
 echo.
-echo if you used default as your directory, the folder will be named default
 
 pause
 
