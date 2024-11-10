@@ -33,6 +33,9 @@ echo your file has successfully been copied
 echo opening the folder which contains x
 echo.
 
-echo your compression has been completed
-echo press any key to exit the program
+if targetDirectory!=default (
+%SystemRoot%\explorer.exe "%~dp0"
 pause
+) else (
+pause
+)
