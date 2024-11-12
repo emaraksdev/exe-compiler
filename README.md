@@ -3,3 +3,5 @@
 A simple .exe compiler for compressing .exe's.
 
 ![carbon](https://github.com/user-attachments/assets/44739603-2aac-42f6-9d8f-9b8ae5b91732)
+
+MAKE SURE TO "EXTRACTALL" THE FILE OR IT WILL NOT WORK.
