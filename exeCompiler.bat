@@ -10,6 +10,8 @@ echo  Your path input, if not default, should be in the format
 echo C:\example1\example2\y\x
 echo y should be the main folder you want it to be in
 echo x should be the new name of the compressed folder (it will be generated)
+echo IT IS VERY IMPORTANT TO NAME X AS A NEW DIRECTORY (NOT EXISTING)
+echo.
 echo if you use default as your directory, the folder will be named default
 echo.
 echo type "default" for the directory that this compiler is stored in
